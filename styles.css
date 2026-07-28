@@ -1,2 +1,7 @@
 
 /* Your CSS Code here. */
+.controlls{
+	display:flex;
+	justif-content:space-between;
+	
+}

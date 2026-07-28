@@ -4,14 +4,35 @@
   <meta charset="UTF-8">
   <title>Video Speed Scrubber</title>
   <link rel="stylesheet" href="styles.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
 
   <div class="wrapper">
-    <video class="flex" width="765" height="430" src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" controls></video>
-    <div class="speed">
-      <div class="speed-bar">1×</div>
+    <video class="flex" width="765" height="430" src="https://www.w3schools.com/html/mov_bbb.mp4" ></video>
+	<div class="controls">
+		<div class='control1 border-1'>
+			<button id="rewind">rewind <<10s</button>
+			<button id='forward'>forward 25 >></button>
+			<button id="player__button">play</button>
+		</div>
+		<div class="control-2 border-1">
+			<input class='w-12' id='volume' placeholder='volume' class="volume" type="range" min='0' max=1 step='0.01' value='0.75'>
+			<input placeholder="playbackSpeed"  id='speed' type='number' min="1" max="2">
+		</div>
+		
+		<div class="">
+		<div>
+	</div>
+	<div class="speed-bar">1×</div>
+		
+		<div id='progress__filled'>progress bar</div>
+		<input placeholder='volume' name='volume' id='volume'>
+		<input placeholder='playbackSpeed' id='playbackspeed' >
+		
     </div>
+    <div class="speed">
+      
   </div>
 
 <script  src="./script.js">
